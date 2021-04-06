@@ -21,16 +21,37 @@
     </div>
   </template>
 
-  <header>
-    <div class="title">
-      <h1>My Library</h1>
-      <h2>Explore and Learn</h2>
-    </div>
+  <header class="header">
+    <div class="flex-between container">
+      <div class="title">
+        <h1>My Library</h1>
+        <h2>Explore and Learn</h2>
+      </div>
 
-    <button>Add a New Book</button>
+      <button>Add a New Book</button>
+    </div>
   </header>
   
-  <div class="books"></div>
+  <div class="books grid col-4t container">
+    <div class="book">
+      <h3 class="book__title">Sample Title</h3>
+      <p class="book__author">Sample Author</p>
+      <p class="book__pages">300</p>
+      <button class="book__status">Read</button>
+    </div>
+    <div class="book">
+      <h3 class="book__title">Sample Title</h3>
+      <p class="book__author">Sample Author</p>
+      <p class="book__pages">300</p>
+      <button class="book__status">Read</button>
+    </div>
+    <div class="book">
+      <h3 class="book__title">Sample Title</h3>
+      <p class="book__author">Sample Author</p>
+      <p class="book__pages">300</p>
+      <button class="book__status">Read</button>
+    </div>
+  </div>
   
 </body>
 </html>
