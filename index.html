@@ -28,9 +28,35 @@
         <h2>Explore and Learn</h2>
       </div>
 
-      <button>Add a New Book</button>
+      <button>Add New Book</button>
     </div>
   </header>
+
+  <div class="modal hide">
+    <div class="modal__bg"></div>
+
+    <form class="form">
+      <div class="form__close">X</div>
+      <h3 class="form__title">Add a New Book</h3>
+      <div class="form__field-group">
+        <label for="" class="form__label">Title:</label>
+        <input type="text" class="form__input">
+      </div>
+      <div class="form__field-group">
+        <label for="" class="form__label">Author:</label>
+        <input type="text" class="form__input">
+      </div>
+      <div class="form__field-group">
+        <label for="" class="form__label">Pages:</label>
+        <input type="number" class="form__input">
+      </div>
+      <div class="form__field-group">
+        <p>Have you read the book?</p>
+        <label for="" class="form__label"><input type="checkbox"> Yes</label>
+      </div>
+      <button class="form__submit">Submit</button>
+    </form>
+  </div>
   
   <div class="books grid col-4t container">
     <div class="book">
