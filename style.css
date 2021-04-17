@@ -67,6 +67,12 @@ body {
   top: 1rem;
   right: 1rem;
   cursor: pointer;
+  font-weight: bold;
+  transform: scaleY(.8);
+}
+
+.form__close:hover {
+  color: red;
 }
 
 .form__title {
