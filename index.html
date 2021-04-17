@@ -35,24 +35,25 @@
   <div class="modal js-modal hide">
     <div class="modal__bg js-modal-bg"></div>
 
-    <form class="form">
+    <form class="form js-form">
       <div class="form__close js-close-icon">X</div>
       <h3 class="form__title">Add a New Book</h3>
+      <span class="error-msg js-error"></span>
       <div class="form__field-group">
         <label for="" class="form__label">Title:</label>
-        <input type="text" class="form__input">
+        <input type="text" class="form__input js-title" placeholder="Book Title">
       </div>
       <div class="form__field-group">
         <label for="" class="form__label">Author:</label>
-        <input type="text" class="form__input">
+        <input type="text" class="form__input js-author" placeholder="Author">
       </div>
       <div class="form__field-group">
         <label for="" class="form__label">Pages:</label>
-        <input type="number" class="form__input">
+        <input type="number" class="form__input js-pages" placeholder="Pages">
       </div>
       <div class="form__field-group">
         <p>Have you read the book?</p>
-        <label for="" class="form__label"><input type="checkbox"> Yes</label>
+        <label for="" class="form__label"><input type="checkbox" class="js-status"> Yes</label>
       </div>
       <button class="form__submit">Submit</button>
     </form>
