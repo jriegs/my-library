@@ -13,11 +13,10 @@
 
   <template id="bookTemplate">
     <div class="book">
-      <h3 class="title"></h3>
-      <p class="author"></p>
-      <p class="pages"></p>
-
-      <button>Read</button>
+      <h3 class="book__title js-book-title"></h3>
+      <p class="book__author js-book-author"></p>
+      <p class="Book__pages js-book-pages"></p>
+      <button class="book__status js-book-status"></button>
     </div>
   </template>
 
@@ -59,7 +58,7 @@
     </form>
   </div>
   
-  <div class="books grid col-4t container">
+  <div class="books grid col-4t container js-books-container">
     <div class="book">
       <h3 class="book__title">Sample Title</h3>
       <p class="book__author">Sample Author</p>

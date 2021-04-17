@@ -5,18 +5,18 @@ function triggerModal() {
   modal.classList.toggle('hide');
 }
 
-function Book(title, author, pages, read) {
+function Book(title, author, pages, readStatus) {
   // the constructor...
   this.title = title;
   this.author = author;
   this.pages = pages;
-  this.read = read;
+  this.status = readStatus;
 
   this.changeReadStatus = function() {
-    if (read) {
-      this.read = false;
+    if (this.status) {
+      this.status = false;
     } else {
-      this.read = true;
+      this.status = true;
     }
   }
 }
@@ -70,14 +70,34 @@ function addBookToLibrary(e) {
 
 
 function displayLibrary(booksArr) {
-  // loop through library
-  booksArr.forEach(book => {
-    console.log(book.title);
-    // create clone of html book template
+  const bookTemplate = document.getElementById('bookTemplate');
+  const tempTitle = bookTemplate.content.querySelector('.js-book-title');
+  const tempAuthor = bookTemplate.content.querySelector('.js-book-author');
+  const tempPages = bookTemplate.content.querySelector('.js-book-pages');
+  const tempStatus = bookTemplate.content.querySelector('.js-book-status');
 
+  // clear out old libary
+  const booksContainer = document.querySelector('.js-books-container');
+  booksContainer.innerHTML = '';
+  
+  // loop through library
+  booksArr.forEach((book) => {
+    console.log(book);
     // set title, author, pages, and read status
+    tempTitle.textContent = book.title;
+    tempAuthor.textContent = book.author;
+    tempPages.textContent = book.pages;
+    if (book.status) {
+      tempStatus.textContent = 'Read';
+    } else {
+      tempStatus.textContent = 'Not read';
+    }
+
+    // create clone of html book template
+    const newBookTemplate = bookTemplate.content.cloneNode(true);
 
     // append book element
+    booksContainer.append(newBookTemplate);
   })
 }
 
