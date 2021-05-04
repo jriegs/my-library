@@ -15,8 +15,10 @@
     <div class="book">
       <h3 class="book__title js-book-title"></h3>
       <p class="book__author js-book-author"></p>
-      <p class="Book__pages js-book-pages"></p>
+      <p class="book__pages js-book-pages"></p>
       <button class="book__status js-book-status"></button>
+      <a href="#" class="icon icon--edit js-edit-book">Edit</a>
+      <a href="#" class="icon icon--delete js-delete-book">Delete</a>
     </div>
   </template>
 
@@ -57,26 +59,12 @@
       <button class="form__submit">Submit</button>
     </form>
   </div>
+
+  <section id="entry-text" class="text-center">
+    <p><strong>No books currently listed...</strong></p>
+  </section>
   
   <div class="books grid col-4t container js-books-container">
-    <div class="book">
-      <h3 class="book__title">Sample Title</h3>
-      <p class="book__author">Sample Author</p>
-      <p class="book__pages">300</p>
-      <button class="book__status">Read</button>
-    </div>
-    <div class="book">
-      <h3 class="book__title">Sample Title</h3>
-      <p class="book__author">Sample Author</p>
-      <p class="book__pages">300</p>
-      <button class="book__status">Read</button>
-    </div>
-    <div class="book">
-      <h3 class="book__title">Sample Title</h3>
-      <p class="book__author">Sample Author</p>
-      <p class="book__pages">300</p>
-      <button class="book__status">Read</button>
-    </div>
   </div>
   
 </body>
