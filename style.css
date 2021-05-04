@@ -129,6 +129,11 @@ body {
   padding: 3rem 2rem;
 }
 
+.book__title::first-letter,
+.book__author {
+  text-transform: capitalize;
+}
+
 .book__title {
   font-size: 2.2rem;
   margin-bottom: 1rem;
@@ -174,6 +179,10 @@ body {
 .grid-center {
   display: grid; 
   place-content: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .hide {
